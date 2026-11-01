@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Holiday gift concept for {{ORG}} · Play Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf7f0;--ink:#1d2a22;--ink2:#56625a;--green:#174a35;--gold:#c99a4b;--card:#fff;--line:#eadfcd}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.55}
+.bar{background:var(--green);color:#f6efe2;font-size:13px;text-align:center;padding:9px 16px}
+.bar b{color:#f3d9a8}
+.wrap{max-width:1040px;margin:0 auto;padding:40px 20px 56px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600}
+h1{font-family:Fraunces,serif;font-size:clamp(30px,5vw,48px);line-height:1.1;margin:10px 0 12px}
+.lead{font-size:18px;color:var(--ink2);max-width:640px;margin:0 0 32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 8px 24px rgba(40,30,10,.06)}
+.card h3{margin:16px 0 4px;font-size:17px}.card p{margin:0;color:var(--ink2);font-size:14px}
+.stage{height:220px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(160deg,#f4ecdf,#e9dcc6)}
+.sign{width:180px;height:180px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e8c99a,#c79a5f 70%,#a87c45);display:grid;place-items:center;box-shadow:inset 0 0 0 6px rgba(120,80,30,.25),0 10px 18px rgba(80,50,20,.25);text-align:center;padding:24px}
+.sign span{font-family:Fraunces,serif;color:#3b2612;font-size:20px;line-height:1.15}
+.sign small{display:block;font-family:Inter;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#5c3d1d;margin-top:6px}
+.orn{width:150px;height:150px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#efe9df 70%,#d9d0c2);box-shadow:0 10px 18px rgba(60,50,30,.25);display:grid;place-items:center;text-align:center;padding:20px;position:relative}
+.orn:before{content:"";position:absolute;top:-16px;width:18px;height:18px;border:3px solid var(--gold);border-radius:50%}
+.orn span{font-family:Fraunces,serif;color:var(--green);font-size:17px;line-height:1.15}
+.mug{width:150px;height:130px;background:#fff;border-radius:10px 10px 22px 22px;position:relative;box-shadow:0 10px 18px rgba(60,50,30,.2);display:grid;place-items:center;text-align:center;padding:16px}
+.mug:after{content:"";position:absolute;right:-30px;top:28px;width:34px;height:56px;border:9px solid #fff;border-left:none;border-radius:0 30px 30px 0;box-shadow:6px 6px 10px rgba(60,50,30,.12)}
+.mug span{font-family:Fraunces,serif;color:var(--green);font-size:16px;line-height:1.15}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:36px 0}
+.step{border-left:3px solid var(--gold);padding:4px 0 4px 14px}.step b{display:block}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none}
+.btn.p{background:var(--green);color:#fff}.btn.s{border:1px solid var(--green);color:var(--green)}
+.note{font-size:13px;color:var(--ink2);margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="bar">Concept made by Play Studio for <b>{{ORG}}</b> — not affiliated, not an order. Order by <b>December 5</b> for delivery before the holidays.</div>
+<div class="wrap">
+  <div class="eyebrow">Holiday gift concept · {{SEGMENT}}</div>
+  <h1>Holiday gifts with “{{ORG}}” on them.</h1>
+  <p class="lead">{{LEAD}}</p>
+
+  <div class="grid">
+    <div class="card"><div class="stage"><div class="sign"><div><span>{{ORG}}</span><small>Happy Holidays {{YEAR}}</small></div></div></div><h3>Printed wood sign</h3><p>Round birch, UV-printed with your name or logo. A keepsake for the desk or wall.</p></div>
+    <div class="card"><div class="stage"><div class="orn"><span>{{ORG_SHORT}}<br><small style="font-size:11px">{{YEAR}}</small></span></div></div><h3>Printed ceramic ornament</h3><p>One per person, optionally with each recipient's first name.</p></div>
+    <div class="card"><div class="stage"><div class="mug"><span>{{ORG_SHORT}}<br><small style="font-size:11px">Thank you for {{YEAR}}</small></span></div></div><h3>Printed ceramic mug</h3><p>A daily-use thank-you gift for staff, volunteers or clients.</p></div>
+  </div>
+
+  <div class="steps">
+    <div class="step"><b>1 · Tell us the count</b>How many people, and your logo if you'd like it used.</div>
+    <div class="step"><b>2 · Free mockup in 24h</b>We show the final design before you commit.</div>
+    <div class="step"><b>3 · Approve & pay</b>One invoice, tiered pricing for 20, 50 or 100+ gifts.</div>
+    <div class="step"><b>4 · Delivered</b>To one address, or shipped to each person.</div>
+  </div>
+
+  <div class="cta">
+    <a class="btn p" href="mailto:hello@getplaystudio.com?subject=Holiday%20gifts%20for%20{{ORG_URL}}">Get a quote in 24h</a>
+    <a class="btn s" href="https://playstudio-agency.lovable.app/business-gifts">See all gift options</a>
+  </div>
+
+  <p class="note">Play Studio · 22 Lawn Ave, Albany, NY 12204 · hello@getplaystudio.com. Designs are AI-assisted and every order is reviewed by a person. Items are printed by US print partners. This page is a private concept; reply "not interested" and we will not contact you again.</p>
+</div>
+</body>
+</html>
