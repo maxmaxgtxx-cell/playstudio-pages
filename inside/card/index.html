@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<title>Inside card · print 4x6 in</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<style>
+@page{size:4in 6in;margin:0}
+*{box-sizing:border-box}
+body{margin:0;background:#ddd;font-family:"IBM Plex Sans Arabic",sans-serif}
+.side{width:4in;height:6in;margin:0 auto 20px;position:relative;overflow:hidden;page-break-after:always;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:.45in}
+.front{background:radial-gradient(ellipse at 50% 40%,#2a211a,#14110f 75%);color:#f7f1e6}
+.front .brand{position:absolute;top:.4in;left:0;right:0;font-family:Amiri,serif;letter-spacing:.3em;font-size:10pt;color:#c8a165}
+.front h1{font-family:Amiri,serif;font-weight:400;font-size:26pt;line-height:1.35;margin:0}
+.front h1 span{display:block;color:#e6cc98}
+.front .line{width:1.2in;height:1px;background:linear-gradient(90deg,transparent,#c8a165,transparent);margin:.3in auto}
+.front .to{font-size:11pt;color:#cbbfae}
+.back{background:#f7f1e6;color:#2a221c}
+.back h2{font-family:Amiri,serif;font-size:18pt;margin:0 0 .15in;font-weight:700}
+.back p{font-size:10.5pt;margin:0 0 .25in;color:#6f6358;line-height:1.7}
+.back img{width:2.1in;height:2.1in;border:6px solid #fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.back .pin{margin-top:.22in;font-size:10pt;color:#6f6358}
+.back .pin b{font-size:15pt;letter-spacing:.35em;color:#2a221c;display:block;margin-top:4px}
+.back .foot{position:absolute;bottom:.3in;left:0;right:0;font-size:7.5pt;color:#9a8d80;direction:ltr}
+@media print{body{background:none}.side{margin:0}}
+</style>
+</head>
+<body>
+<div class="side front">
+  <div class="brand">ما بالداخل · INSIDE</div>
+  <h1>العلبة مجرد غلاف…<span>الهدية الحقيقية جوّه.</span></h1>
+  <div class="line"></div>
+  <div class="to">إلى أمي، من سارة</div>
+</div>
+<div class="side back">
+  <h2>رسالة كُتبت لك أنت</h2>
+  <p>امسح الكود بكاميرا تلفونك،<br>ضع سماعاتك، واكتب الرمز.</p>
+  <img src="../../assets/qr-inside-demo.png" alt="QR">
+  <div class="pin">الرمز السري<b>2026</b></div>
+  <div class="foot">Inside by Play Studio · Albany, NY · getplaystudio.com · Private page, not listed in search</div>
+</div>
+</body>
+</html>
